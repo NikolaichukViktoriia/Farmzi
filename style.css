@@ -39,6 +39,7 @@ body {
   font-size: 48px;
   line-height: 58px;
   color: #177165;
+  margin-bottom: 50px;
 }
 .nav {
   background-color: #177165;
@@ -203,17 +204,19 @@ body {
   width: 40px;
   height: 1px;
   left: 0;
-  top: 12x;
+  top: 10p[];
   background-color: #777777;
 }
 .title--about {
   max-width: 995px;
   width: 100%;
-  margin-bottom: 50px;
 }
 .about__inner {
   display: flex;
   justify-content: space-between;
+}
+.about__img {
+  margin-right: 15px;
 }
 .about__image {
   max-width: 870px;
@@ -240,7 +243,7 @@ body {
   color: #777777;
   margin-bottom: 15px;
 }
-.about__item--color {
+.a .about__item--color {
   font-family: "Playfair Display";
   font-size: 22px;
   line-height: 30px;
@@ -248,7 +251,7 @@ body {
   margin-bottom: 35px;
 }
 
-.farmzi__about {
+.about__link {
   padding: 10px 70px 10px 50px;
   background-color: #fff;
   border: 1px solid green;
@@ -259,7 +262,7 @@ body {
   top: 90px;
 }
 
-.farmzi__about::before {
+.about__link::before {
   content: "+";
   position: absolute;
   right: 45px;
@@ -267,4 +270,41 @@ body {
   color: #177165;
   height: 15px;
   width: 15px;
+}
+/* Services */
+.services {
+  padding: 100px 0;
+  background-color: #e1f4f2;
+}
+.services__subtitle {
+  font-size: 17px;
+  line-height: 29px;
+  color: #777777;
+  position: relative;
+  padding-left: 50px;
+}
+.services__subtitle::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: 0;
+  top: 10px;
+  background-color: #777777;
+}
+.service__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.services__item {
+  max-width: 270px;
+  width: 100%;
+}
+.services__title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #177165;
 }
