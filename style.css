@@ -33,12 +33,12 @@ body {
   padding: 0 15px;
 }
 .title {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 58px;
-  color: #177165;  
+  color: #177165;
 }
 .nav {
   background-color: #177165;
@@ -216,23 +216,23 @@ body {
   justify-content: space-between;
 }
 .about__image {
- max-width: 870px;
- width: 550px;
-object-fit: cover;
+  max-width: 870px;
+  width: 550px;
+  object-fit: cover;
 }
 .about__text {
-max-width: 465px;
-width: 100%;
-padding-top: 75px;
+  max-width: 465px;
+  width: 100%;
+  padding-top: 75px;
 }
 .about__title {
-  font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 35px;
-color: #177165;
-margin-bottom: 25px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  color: #177165;
+  margin-bottom: 25px;
 }
 .about__item {
   font-size: 16px;
@@ -241,9 +241,30 @@ margin-bottom: 25px;
   margin-bottom: 15px;
 }
 .about__item--color {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 22px;
   line-height: 30px;
   color: #177165;
   margin-bottom: 35px;
+}
+
+.farmzi__about {
+  padding: 10px 70px 10px 50px;
+  background-color: #fff;
+  border: 1px solid green;
+  font-size: 16px;
+  line-height: 26px;
+  color: #177165;
+  position: relative;
+  top: 90px;
+}
+
+.farmzi__about::before {
+  content: "+";
+  position: absolute;
+  right: 45px;
+  top: 7px;
+  color: #177165;
+  height: 15px;
+  width: 15px;
 }
