@@ -308,3 +308,8 @@ body {
   line-height: 36px;
   color: #177165;
 }
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
