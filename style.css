@@ -41,6 +41,27 @@ body {
   color: #177165;
   margin-bottom: 50px;
 }
+
+.description {
+  font-size: 17px;
+  line-height: 29px;
+  color: #a4d6cf;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.description::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: 0;
+  top: 14px;
+  background-color: #a4d6cf;
+}
+
 .nav {
   background-color: #177165;
   padding: 25px 10px;
@@ -127,30 +148,6 @@ body {
   width: 100%;
 }
 
-.hero__description {
-  font-size: 17px;
-  line-height: 29px;
-  color: #a4d6cf;
-  position: relative;
-  padding-left: 50px;
-  margin-bottom: 20px;
-  display: block;
-}
-
-.her0__description:nth-child(2) {
-  margin-bottom: 60px;
-}
-
-.hero__description::after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 1px;
-  left: 0;
-  top: 14px;
-  background-color: #a4d6cf;
-}
-
 .hero__title {
   font-family: "Playfair Display";
   font-size: 60px;
@@ -190,7 +187,7 @@ body {
   padding: 215px 0 100px;
 }
 
-.about__subtitle {
+.subtitle {
   font-size: 18px;
   line-height: 29px;
   padding-left: 50px;
@@ -198,13 +195,13 @@ body {
   position: relative;
 }
 
-.about__subtitle::after {
+.subtitle::after {
   content: "";
   position: absolute;
   width: 40px;
   height: 1px;
   left: 0;
-  top: 10p[];
+  top: 10px;
   background-color: #777777;
 }
 .title--about {
@@ -271,11 +268,13 @@ body {
   height: 15px;
   width: 15px;
 }
+
 /* Services */
 .services {
-  padding: 100px 0;
+  padding: 100px 0 150px 0;
   background-color: #e1f4f2;
 }
+
 .services__subtitle {
   font-size: 17px;
   line-height: 29px;
@@ -283,6 +282,7 @@ body {
   position: relative;
   padding-left: 50px;
 }
+
 .services__subtitle::after {
   content: "";
   position: absolute;
@@ -292,15 +292,18 @@ body {
   top: 10px;
   background-color: #777777;
 }
+
 .services__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
 }
+
 .services__item {
   max-width: 270px;
   width: 100%;
 }
+
 .services__title {
   font-family: "Playfair Display";
   font-weight: 400;
@@ -308,8 +311,110 @@ body {
   line-height: 36px;
   color: #177165;
 }
-
 .center {
   text-align: center;
   margin: 0 auto;
+}
+
+.services .about__link {
+  background-color: #e1f4f2;
+  border: 2px solid #177165;
+  top: 80px;
+}
+
+/* Action section */
+
+.action {
+  background-color: #177165;
+  padding: 80px 0;
+}
+.action__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.action--title {
+  color: #fff;
+}
+
+.nav__phone-title {
+  color: #a4d6cf;
+}
+
+.action__services {
+  background-color: #23786d;
+  max-width: 463px;
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Team section */
+
+.team {
+  padding: 100px 0;
+}
+.team__inner {
+  max-width: 660px;
+  margin-left: auto;
+}
+.team__list {
+  display: flex;
+}
+.team__item {
+  margin-right: 50px;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+.team__image {
+  width: 345px;
+  height: 530px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+.team__title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 42px;
+  color: #177165;
+}
+.team__description {
+  font-size: 15px;
+  line-height: 26px;
+  color: #777777;
+  max-width: 300px;
+  width: 100%;
+}
+.company__intro {
+  background-color: #177165;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.company__inner .description {
+  position: relative;
+  height: 29px;
+  left: 0%;
+  right: 0%;
+  top: 100px;
+}
+.company__inner .title {
+  position: relative;
+  height: 173px;
+  left: 0%;
+  right: 9.3%;
+  top: 140px;
+  max-width: 517px;
+
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  /* or 120% */
+
+  color: #ffffff;
 }
